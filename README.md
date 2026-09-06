@@ -15,7 +15,7 @@
 [![Issues](https://img.shields.io/github/issues/deepanshu-bisht-dev/ResumeIQ?style=flat-square)](https://github.com/deepanshu-bisht-dev/ResumeIQ/issues)
 [![Stars](https://img.shields.io/github/stars/deepanshu-bisht-dev/ResumeIQ?style=flat-square)](https://github.com/deepanshu-bisht-dev/ResumeIQ/stargazers)
 
-[Features](#-features) • [Demo](#-demo) • [Getting Started](#-getting-started) • [Usage](#-usage) • [Project Structure](#-project-structure) • [Roadmap](#-roadmap) • [Contributing](#-contributing)
+[Features](#-features) • [Getting Started](#-getting-started) • [Usage](#-usage) • [Project Structure](#-project-structure) • [Roadmap](#-roadmap) • [Contributing](#-contributing)
 
 </div>
 
