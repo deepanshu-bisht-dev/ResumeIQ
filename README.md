@@ -1,4 +1,5 @@
-#                                                            ResumeIQ
+<div align="center">
+#  ResumeIQ
 
 **An AI-powered resume analyzer that parses, scores, and matches resumes against job descriptions.**
 
@@ -31,19 +32,6 @@
 - 🌐 **Simple web interface** — upload and analyze resumes directly from the browser, no CLI needed
 - ⚡ **Fast, local processing** — no external API calls required for parsing
 
-## 🎬 Demo
-
-<div align="center">
-
-<img src="./assets/screenshot-upload.png" alt="Upload screen" width="80%" />
-<p><em>Upload a resume and job description</em></p>
-
-<img src="./assets/screenshot-results.png" alt="Results screen" width="80%" />
-<p><em>Parsed data and match score</em></p>
-
-</div>
-
-> **Note:** Screenshots above are placeholders — drop your own into an `assets/` folder at the repo root (create it if it doesn't exist) using these filenames, or update the paths above to match your images.
 
 ## 🛠️ Tech Stack
 
