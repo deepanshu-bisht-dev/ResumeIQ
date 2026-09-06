@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="./assets/banner.png" alt="ResumeIQ banner" width="100%" />
-
 # ResumeIQ
 
 **An AI-powered resume analyzer that parses, scores, and matches resumes against job descriptions.**
