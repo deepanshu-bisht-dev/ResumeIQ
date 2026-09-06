@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeIQ — AI Resume Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark">◆</span>
+            <span class="brand-text">RESUME<span class="accent-text">IQ</span></span>
+        </div>
+        <button class="theme-toggle" id="theme-toggle">
+            <span class="icon" id="theme-icon">🌙</span>
+            <span id="theme-label">DARK</span>
+        </button>
+    </header>
+
+    <main class="hero">
+        <p class="eyebrow">// AI Resume Analyzer</p>
+        <h1>Know what your resume <span class="highlight">actually says.</span></h1>
+        <p class="subtext">
+            Upload your resume to extract structured details automatically, and
+            optionally paste a job description to see how well you match — plus
+            which skills you're missing.
+        </p>
+    </main>
+
+    <section class="workspace">
+        <div class="panel upload-panel">
+            <h2 class="panel-title">1. Upload Resume</h2>
+            <div class="dropzone" id="dropzone">
+                <div class="dropzone-icon">📄</div>
+                <p class="dropzone-text" id="dropzone-text">Drop your resume here</p>
+                <p class="dropzone-subtext">or click to browse — PDF or DOCX</p>
+                <input type="file" id="file-input" accept=".pdf,.docx" hidden>
+            </div>
+
+            <h2 class="panel-title">2. Job Description <span class="optional-tag">(optional)</span></h2>
+            <textarea id="job-description" placeholder="Paste the job description here to get a match score and see missing skills..."></textarea>
+
+            <button class="analyze-btn" id="analyze-btn" disabled>Analyze Resume</button>
+            <p class="status-line" id="status-line"></p>
+        </div>
+
+        <div class="panel results-panel" id="results-panel">
+            <div class="empty-state" id="empty-state">
+                <div class="empty-icon">🔍</div>
+                <p>Upload a resume to see the analysis here.</p>
+            </div>
+
+            <div class="results-content" id="results-content" style="display: none;">
+                <div class="result-block">
+                    <h3>Candidate Details</h3>
+                    <div class="detail-grid" id="detail-grid"></div>
+                </div>
+
+                <div class="result-block">
+                    <h3>Skills Detected</h3>
+                    <div class="skills-list" id="skills-list"></div>
+                </div>
+
+                <div class="result-block">
+                    <h3>Education</h3>
+                    <ul class="education-list" id="education-list"></ul>
+                </div>
+
+                <div class="result-block" id="match-block" style="display: none;">
+                    <h3>Job Match Score</h3>
+                    <div class="score-display">
+                        <div class="score-circle" id="score-circle">
+                            <span id="score-value">0%</span>
+                        </div>
+                        <div class="score-meta">
+                            <p class="score-label" id="score-label">Calculating fit...</p>
+                        </div>
+                    </div>
+                    <div class="missing-skills-wrap" id="missing-skills-wrap">
+                        <p class="missing-skills-title">Skills mentioned in the job description but not found in your resume:</p>
+                        <div class="skills-list missing" id="missing-skills-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Built with Flask · spaCy · scikit-learn — Deepanshu Bisht</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
