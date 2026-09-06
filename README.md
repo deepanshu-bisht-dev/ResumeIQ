@@ -1,4 +1,4 @@
-# ResumeIQ
+#                                                            ResumeIQ
 
 **An AI-powered resume analyzer that parses, scores, and matches resumes against job descriptions.**
 
