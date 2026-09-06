@@ -1,5 +1,6 @@
 <div align="center">
-#  ResumeIQ
+
+# ResumeIQ
 
 **An AI-powered resume analyzer that parses, scores, and matches resumes against job descriptions.**
 
@@ -31,7 +32,6 @@
 - 🎯 **Job-match scoring** — compares resume content against a job description using scikit-learn text similarity
 - 🌐 **Simple web interface** — upload and analyze resumes directly from the browser, no CLI needed
 - ⚡ **Fast, local processing** — no external API calls required for parsing
-
 
 ## 🛠️ Tech Stack
 
